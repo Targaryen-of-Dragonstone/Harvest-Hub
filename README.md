@@ -10,6 +10,7 @@ Harvest Hub is a groundbreaking initiative aimed at revolutionizing Indian agric
 - **Agronomic Recommendations:** Access agronomic recommendations for optimal crop management.
 - **Government Schemes:** Stay updated with access to government schemes and subsidies for farmers.
 - **SOils and Crops** Access the information about all types of soils and Crops in India .
+- **Loging In** Simple login page is provided to access number of users( username: admin, password: 1234 )
 
 ## Mission
 At Harvest Hub, we're committed to driving positive change in rural communities, promoting sustainability, and empowering farmers to thrive in today's competitive agricultural landscape. Our mission is to revolutionize Indian agriculture and create a brighter future for farmers across the nation.
