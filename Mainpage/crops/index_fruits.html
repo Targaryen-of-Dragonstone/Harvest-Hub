@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FRUITS CROPS</title>
+	<style>
+		body {
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			/* Add these lines */
+			background-image: url('crops.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		h1 {
+			text-align: center;
+			color: #333;
+			font-size: 2em;
+			margin-bottom: 50px;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		li {
+			margin: 10px;
+			padding: 20px;
+			background-color: #92eb0c;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			width: 200px;
+			height: 100px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.3s ease-in-out;
+			cursor: move; /* fallback if grab cursor is unsupported */
+			cursor: grab;
+			cursor: -moz-grab;
+			cursor: -webkit-grab;
+		}
+		li:active {
+			cursor: grabbing;
+			cursor: -moz-grabbing;
+			cursor: -webkit-grabbing;
+		}
+		li:hover {
+			cursor: pointer;
+		}
+		li:active {
+			cursor: grabbing;
+			cursor: -moz-grabbing;
+			cursor: -webkit-grabbing;
+		}
+		li span {
+			font-size: 20px;
+			color: #333;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>FRUITS CROPS</h1>
+	<ul>
+		<a href="pom.html"><li><span>Pomegranate</span></li></a>
+		<a href="banan.html"><li><span>Banana</span></li></a>
+		<a href="mango.html"><li><span>Mango</span></li></a>
+		<a href="grapes.html"><li><span>Grapes</span></li></a>
+		<a href="water.html"><li><span>Watermelon</span></li></a>
+		<a href="musk.html"><li><span>Muskmelon</span></li></a>
+		<a href="apple.html"><li><span>Apple</span></li></a>
+		<a href="orange.html"><li><span>Orange</span></li></a>
+		<a href="papaya.html"><li><span>Papaya</span></li></a>
+		<a href="coco.html"><li><span>Coconut</span></li></a>
+</body>
+</html>

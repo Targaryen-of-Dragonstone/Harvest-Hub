@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            margin: 0;
+            position: relative; /* Set position to relative */
+            min-height: 100vh; /* Set minimum height of the body to fill the viewport */
+        }
+
+        .header {
+            animation: 1s ease-out 0s 1 slideInFromTop;
+            text-align: center;
+            padding: 10px 5px;
+            /* Maintain top and bottom padding, remove left and right padding */
+            color: white;
+            background-color: #865D07;
+            font-size: 17px;
+            height: 110px;
+            /* Adjust the height of the header */
+        }
+
+        .header h1 {
+            margin: 10px 0;
+            /* Adjust the margin to reduce the distance */
+        }
+
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 99%;
+            justify-content: space-between;
+        }
+
+        .menu .top, .menu .bottom {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        .menu .top {
+            animation: 1s ease-out 0s 1 slideInFromLeft;
+        }
+
+        .menu .bottom {
+            animation: 1s ease-out 0s 1 slideInFromRight;
+        }
+
+        .menu button {
+            color: white;
+            background: none;
+            border: 2px solid transparent; /* Change border color */
+            padding: 15px 30px;
+            /* Increase button size */
+            border-radius: 25px;
+            font-size: 18px;
+            /* Increase font size */
+            cursor: pointer;
+            margin: 10px 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: border-color 0.3s ease; /* Add transition effect */
+        }
+
+        .menu button:hover {
+            border-color: white; /* Change border color on hover */
+        }
+
+        footer {
+            background-color: #2d1e07;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0; /* Position the footer at the bottom of the viewport */
+            left: 0;
+            width: 99%;
+            z-index: 3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-left {
+            flex: 1;
+            text-align: left;
+        }
+        
+        .footer-right {
+            flex: 1;
+            text-align: right;
+        }
+        
+        
+        .footer-center {
+            flex: 2;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Harvest Hub</h1>
+        <marquee direction="left">
+            <p>Welcome to Harvest Hub. This will be Your One-stop Destination for Crop Insights and Farming Wisdom</p>
+        </marquee>
+    </div>
+    <div class="menu">
+        <div class="top">
+            <a href="Insights\home.html"><button>Insights</button></a>
+            <a href="Predictions\index.html"><button>Predictions</button></a>
+            <a href="SeasonalCrops\seasonal_crops.html"><button>Seasonal Crops</button></a>
+        </div>
+        <div class="bottom">
+            <a href="crops\index.html"><button>Crops</button></a>
+            <a href="Soils\PROJECT SOIL.html"><button>Soil</button></a> 
+            <a href="Schemes\schemes.html"><button>Govt Schemes</button></a>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-left">
+            <p>Faculty : Mr Hari Ram</p>
+        </div>
+        <div class="footer-center">
+            <a href="about.html">Home</a> | <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-right">
+            <p>Copyrights &copy; 2024 Code RED Team</p>
+        </div>
+    </footer>
+</body>
+
+</html>

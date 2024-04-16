@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PLANTATION CROPS</title>
+	<style>
+		body {
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			/* Add these lines */
+			background-image: url('crops.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		h1 {
+			text-align: center;
+			color: #333;
+			font-size: 2em;
+			margin-bottom: 50px;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		li {
+			margin: 10px;
+			padding: 20px;
+			background-color: #92eb0c;
+			background-image: url('rice.jpg');
+			background-size: cover;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			width: 200px;
+			height: 100px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.3s ease-in-out;
+			cursor: move; /* fallback if grab cursor is unsupported */
+			cursor: grab;
+			cursor: -moz-grab;
+			cursor: -webkit-grab;
+		}
+		li:active {
+			cursor: grabbing;
+			cursor: -moz-grabbing;
+			cursor: -webkit-grabbing;
+		}
+		li:hover {
+			cursor: pointer;
+		}
+		li:active {
+			cursor: grabbing;
+			cursor: -moz-grabbing;
+			cursor: -webkit-grabbing;
+		}
+		li span {
+			font-size: 20px;
+			color: #333;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>PLANTATION CROPS</h1>
+	<ul>
+		<a href="rice.html"><li><span>Rice</span></li></a>
+		<a href="chickpea.html"><li><span>Chickpea</span></li></a>
+		<a href="kidneybean.html"><li><span>Kidneybeans</span></li></a>
+		<a href="cot.html"><li><span>Cotton</span></li></a>
+		<a href="jute.html"><li><span>Jute</span></li></a>
+		<a href="coffee.html"><li><span>Coffee</span></li></a>
+	</ul>
+</body>
+</html>

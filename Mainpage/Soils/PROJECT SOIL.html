@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Types of Soil in TamilNadu </title>
+  <style>
+    body {
+      background-image: "soils.png";
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8; /* Set your desired background color */
+      background-image: url('soils.png'); /* Replace 'background_image.jpg' with the path to your background image */
+      background-size: cover; /* Adjusts the background image to cover the entire body */
+      background-repeat: no-repeat; /* Prevents the background image from repeating */
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      animation: slideDown 1s ease forwards;
+    }
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      animation: zoomIn 1s ease forwards;
+    }
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .soil {
+      margin-bottom: 20px;
+      padding: 20px;
+      border-bottom: 1px solid #df0b0b;
+      transition: transform 0.3s ease;
+    }
+    .soil:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .soil h2 {
+      color: #333;
+      margin-top: 0;
+      animation: colorChange 2s infinite alternate;
+    }
+    @keyframes colorChange {
+      from {
+        color: #333;
+      }
+      to {
+        color: #ff5733;
+      }
+    }
+    .soil p {
+      color: #111111;
+    }
+    .soil-image {
+      max-width: 30%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .soil-image:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Types of Soil in Tamil Nadu</h1>
+  </header>
+
+  <div class="container">
+    <div class="soil">
+      <h2>RED SOIL</h2>
+      <img src="red soil.jpg" alt="RED SOIL" class="soil-image">
+      <p>Red soil is predominant in Tamil Nadu, covering about 70% of the state's agricultural land. It is well-drained, porous, and rich in iron oxides. Red soil is suitable for growing crops like millets, pulses, groundnuts, and cotton. Red soil is primarily found in Sivagangai and Ramanathapuram.</p>
+    </div>
+
+    <div class="soil">
+      <h2>BLACK SOIL</h2>
+      <img src="black soil.jpg" alt="Black Soil" class="soil-image">
+      <p>Black soil, also known as regur soil, is found in parts of Tamil Nadu. It is rich in calcium, magnesium, and phosphorous, making it suitable for cultivation of crops like cotton, sorghum, maize, and pulses. Black soil is found in Madurai, Virudhunagar, etc.</p>
+    </div>
+
+    <div class="soil">
+      <h2>ALLUVIAL SOIL</h2>
+      <img src="alluvial_soil.jpg" alt="Alluvial Soil" class="soil-image">
+      <p>Alluvial soil is found in river basins and deltas, particularly along the Cauvery and Vaigai rivers. It is fertile and suitable for growing a wide range of crops, including rice, sugarcane, pulses, and vegetables. Alluvial soil is found in Nagapattinam, Kanyakumari.</p>
+    </div>
+
+    <div class="soil">
+      <h2>LATERITE SOIL</h2>
+      <img src="laterite_soil.jpg" alt="Laterite Soil" class="soil-image">
+      <p>Laterite soil is common in hilly regions of Tamil Nadu. It is acidic and lacks fertility, but with proper management and fertilization, it can be used for cultivation of cashew, tea, coffee, and spices. Laterite soil is found in parts of Kancheepuram, Thanjavur, etc.</p>
+    </div>
+  </div>
+</body>
+</html>
